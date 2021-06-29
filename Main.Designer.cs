@@ -110,7 +110,7 @@
             this.groupBox1.Controls.Add(this.tableLayoutPanel2);
             this.groupBox1.Location = new System.Drawing.Point(12, 250);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(213, 231);
+            this.groupBox1.Size = new System.Drawing.Size(175, 231);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Network";
@@ -119,7 +119,7 @@
             // 
             this.rdDHCP.AutoSize = true;
             this.rdDHCP.Dock = System.Windows.Forms.DockStyle.Left;
-            this.rdDHCP.Location = new System.Drawing.Point(106, 3);
+            this.rdDHCP.Location = new System.Drawing.Point(87, 3);
             this.rdDHCP.Name = "rdDHCP";
             this.rdDHCP.Size = new System.Drawing.Size(52, 24);
             this.rdDHCP.TabIndex = 1;
@@ -147,7 +147,7 @@
             this.bntConfigNetwork.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bntConfigNetwork.Location = new System.Drawing.Point(3, 183);
             this.bntConfigNetwork.Name = "bntConfigNetwork";
-            this.bntConfigNetwork.Size = new System.Drawing.Size(201, 25);
+            this.bntConfigNetwork.Size = new System.Drawing.Size(163, 25);
             this.bntConfigNetwork.TabIndex = 7;
             this.bntConfigNetwork.Text = "Config network";
             this.bntConfigNetwork.UseVisualStyleBackColor = false;
@@ -157,9 +157,9 @@
             // 
             this.cmbDNS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbDNS.FormattingEnabled = true;
-            this.cmbDNS.Location = new System.Drawing.Point(106, 123);
+            this.cmbDNS.Location = new System.Drawing.Point(87, 123);
             this.cmbDNS.Name = "cmbDNS";
-            this.cmbDNS.Size = new System.Drawing.Size(98, 21);
+            this.cmbDNS.Size = new System.Drawing.Size(79, 21);
             this.cmbDNS.TabIndex = 5;
             this.cmbDNS.SelectedIndexChanged += new System.EventHandler(this.cmbDNS_SelectedIndexChanged);
             // 
@@ -172,6 +172,7 @@
             this.label5.Size = new System.Drawing.Size(27, 30);
             this.label5.TabIndex = 2;
             this.label5.Text = "DNS";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
@@ -182,6 +183,7 @@
             this.label3.Size = new System.Drawing.Size(50, 30);
             this.label3.TabIndex = 2;
             this.label3.Text = "Gateway";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
@@ -192,6 +194,7 @@
             this.label2.Size = new System.Drawing.Size(48, 30);
             this.label2.TabIndex = 2;
             this.label2.Text = "Netmask";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label1
             // 
@@ -202,38 +205,39 @@
             this.label1.Size = new System.Drawing.Size(17, 30);
             this.label1.TabIndex = 4;
             this.label1.Text = "IP";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtCustomDNS
             // 
             this.txtCustomDNS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtCustomDNS.Enabled = false;
-            this.txtCustomDNS.Location = new System.Drawing.Point(106, 153);
+            this.txtCustomDNS.Location = new System.Drawing.Point(87, 153);
             this.txtCustomDNS.Name = "txtCustomDNS";
-            this.txtCustomDNS.Size = new System.Drawing.Size(98, 21);
+            this.txtCustomDNS.Size = new System.Drawing.Size(79, 21);
             this.txtCustomDNS.TabIndex = 6;
             // 
             // txtGateway
             // 
             this.txtGateway.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtGateway.Location = new System.Drawing.Point(106, 93);
+            this.txtGateway.Location = new System.Drawing.Point(87, 93);
             this.txtGateway.Name = "txtGateway";
-            this.txtGateway.Size = new System.Drawing.Size(98, 21);
+            this.txtGateway.Size = new System.Drawing.Size(79, 21);
             this.txtGateway.TabIndex = 4;
             // 
             // txtNetmask
             // 
             this.txtNetmask.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtNetmask.Location = new System.Drawing.Point(106, 63);
+            this.txtNetmask.Location = new System.Drawing.Point(87, 63);
             this.txtNetmask.Name = "txtNetmask";
-            this.txtNetmask.Size = new System.Drawing.Size(98, 21);
+            this.txtNetmask.Size = new System.Drawing.Size(79, 21);
             this.txtNetmask.TabIndex = 3;
             // 
             // txtIP
             // 
             this.txtIP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtIP.Location = new System.Drawing.Point(106, 33);
+            this.txtIP.Location = new System.Drawing.Point(87, 33);
             this.txtIP.Name = "txtIP";
-            this.txtIP.Size = new System.Drawing.Size(98, 21);
+            this.txtIP.Size = new System.Drawing.Size(79, 21);
             this.txtIP.TabIndex = 2;
             // 
             // groupBox2
@@ -241,7 +245,7 @@
             this.groupBox2.Controls.Add(this.tableLayoutPanel1);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(213, 232);
+            this.groupBox2.Size = new System.Drawing.Size(175, 232);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Security";
@@ -250,9 +254,9 @@
             // 
             this.btnChangeAdminAcc.BackColor = System.Drawing.Color.Transparent;
             this.btnChangeAdminAcc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnChangeAdminAcc.Location = new System.Drawing.Point(106, 3);
+            this.btnChangeAdminAcc.Location = new System.Drawing.Point(87, 3);
             this.btnChangeAdminAcc.Name = "btnChangeAdminAcc";
-            this.btnChangeAdminAcc.Size = new System.Drawing.Size(98, 24);
+            this.btnChangeAdminAcc.Size = new System.Drawing.Size(79, 24);
             this.btnChangeAdminAcc.TabIndex = 1;
             this.btnChangeAdminAcc.Text = "Change Admin Acc";
             this.btnChangeAdminAcc.UseVisualStyleBackColor = false;
@@ -262,9 +266,9 @@
             // 
             this.btnChangeRDPPort.BackColor = System.Drawing.Color.Transparent;
             this.btnChangeRDPPort.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnChangeRDPPort.Location = new System.Drawing.Point(106, 63);
+            this.btnChangeRDPPort.Location = new System.Drawing.Point(87, 63);
             this.btnChangeRDPPort.Name = "btnChangeRDPPort";
-            this.btnChangeRDPPort.Size = new System.Drawing.Size(98, 24);
+            this.btnChangeRDPPort.Size = new System.Drawing.Size(79, 24);
             this.btnChangeRDPPort.TabIndex = 1;
             this.btnChangeRDPPort.Text = "Change RDP port";
             this.btnChangeRDPPort.UseVisualStyleBackColor = false;
@@ -275,7 +279,7 @@
             this.txtAdminAcc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtAdminAcc.Location = new System.Drawing.Point(3, 3);
             this.txtAdminAcc.Name = "txtAdminAcc";
-            this.txtAdminAcc.Size = new System.Drawing.Size(97, 21);
+            this.txtAdminAcc.Size = new System.Drawing.Size(78, 21);
             this.txtAdminAcc.TabIndex = 0;
             this.txtAdminAcc.Text = "Administrator";
             // 
@@ -283,9 +287,9 @@
             // 
             this.btnChangePassword.BackColor = System.Drawing.Color.Transparent;
             this.btnChangePassword.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnChangePassword.Location = new System.Drawing.Point(106, 33);
+            this.btnChangePassword.Location = new System.Drawing.Point(87, 33);
             this.btnChangePassword.Name = "btnChangePassword";
-            this.btnChangePassword.Size = new System.Drawing.Size(98, 24);
+            this.btnChangePassword.Size = new System.Drawing.Size(79, 24);
             this.btnChangePassword.TabIndex = 1;
             this.btnChangePassword.Text = "Change Pass";
             this.btnChangePassword.UseVisualStyleBackColor = false;
@@ -296,7 +300,7 @@
             this.txtRDPPort.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtRDPPort.Location = new System.Drawing.Point(3, 63);
             this.txtRDPPort.Name = "txtRDPPort";
-            this.txtRDPPort.Size = new System.Drawing.Size(97, 21);
+            this.txtRDPPort.Size = new System.Drawing.Size(78, 21);
             this.txtRDPPort.TabIndex = 0;
             this.txtRDPPort.Text = "3388";
             // 
@@ -322,7 +326,7 @@
             this.txtNewPassword.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNewPassword.Location = new System.Drawing.Point(3, 33);
             this.txtNewPassword.Name = "txtNewPassword";
-            this.txtNewPassword.Size = new System.Drawing.Size(97, 21);
+            this.txtNewPassword.Size = new System.Drawing.Size(78, 21);
             this.txtNewPassword.TabIndex = 0;
             // 
             // btnExtendDisk
@@ -344,7 +348,7 @@
             this.groupBox4.Controls.Add(this.flowLayoutPanel2);
             this.groupBox4.Controls.Add(this.btnConfigWindows);
             this.groupBox4.Controls.Add(this.btnExtendDisk);
-            this.groupBox4.Location = new System.Drawing.Point(231, 12);
+            this.groupBox4.Location = new System.Drawing.Point(193, 12);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(163, 469);
             this.groupBox4.TabIndex = 3;
@@ -503,7 +507,7 @@
             this.btnInstall.BackColor = System.Drawing.Color.Transparent;
             this.btnInstall.Location = new System.Drawing.Point(6, 440);
             this.btnInstall.Name = "btnInstall";
-            this.btnInstall.Size = new System.Drawing.Size(116, 23);
+            this.btnInstall.Size = new System.Drawing.Size(118, 23);
             this.btnInstall.TabIndex = 14;
             this.btnInstall.Text = "Install softwares";
             this.btnInstall.UseVisualStyleBackColor = false;
@@ -692,6 +696,7 @@
             // chkUpdate
             // 
             this.chkUpdate.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.chkUpdate, 2);
             this.chkUpdate.Dock = System.Windows.Forms.DockStyle.Left;
             this.chkUpdate.Location = new System.Drawing.Point(3, 123);
             this.chkUpdate.Name = "chkUpdate";
@@ -718,7 +723,7 @@
             // 
             this.chkStartUp.AutoSize = true;
             this.chkStartUp.Dock = System.Windows.Forms.DockStyle.Left;
-            this.chkStartUp.Location = new System.Drawing.Point(106, 93);
+            this.chkStartUp.Location = new System.Drawing.Point(87, 93);
             this.chkStartUp.Name = "chkStartUp";
             this.chkStartUp.Size = new System.Drawing.Size(75, 24);
             this.chkStartUp.TabIndex = 15;
@@ -755,7 +760,7 @@
             this.flowLayoutPanel1.Controls.Add(this.chkWinRAR);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(6, 20);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(116, 414);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(118, 414);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
             // flowLayoutPanel2
@@ -785,9 +790,9 @@
             // 
             this.groupBox3.Controls.Add(this.flowLayoutPanel1);
             this.groupBox3.Controls.Add(this.btnInstall);
-            this.groupBox3.Location = new System.Drawing.Point(400, 12);
+            this.groupBox3.Location = new System.Drawing.Point(362, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(128, 469);
+            this.groupBox3.Size = new System.Drawing.Size(130, 469);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Softwares";
@@ -819,7 +824,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(207, 212);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(169, 212);
             this.tableLayoutPanel1.TabIndex = 16;
             // 
             // tableLayoutPanel2
@@ -850,14 +855,14 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(207, 211);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(169, 211);
             this.tableLayoutPanel2.TabIndex = 16;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(540, 489);
+            this.ClientSize = new System.Drawing.Size(504, 489);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
