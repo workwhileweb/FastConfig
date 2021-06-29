@@ -1,7 +1,7 @@
-  Run using CMD command :
-    powershell -command "$url = 'https://github.com/workwhileweb/FastConfig/releases/download/v1.0/FastConfig.exe'; $file = [Environment]::GetFolderPath('Desktop') + '/FastConfig.exe'; [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri $url -OutFile $file; Start-Process -Filepath $file;"
-  Run using PowerShell command :
-    $url = "https://github.com/workwhileweb/FastConfig/releases/download/v1.0/FastConfig.exe"; $file = [Environment]::GetFolderPath("Desktop") + "/FastConfig.exe"; [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri $url -OutFile $file; Start-Process -Filepath $file;
+  * Run using CMD command :
+    > powershell -command "$url = 'https://github.com/workwhileweb/FastConfig/releases/download/v1.0/FastConfig.exe'; $file = [Environment]::GetFolderPath('Desktop') + '/FastConfig.exe'; [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri $url -OutFile $file; Start-Process -Filepath $file;"
+  * Run using PowerShell command :
+    > $url = "https://github.com/workwhileweb/FastConfig/releases/download/v1.0/FastConfig.exe"; $file = [Environment]::GetFolderPath("Desktop") + "/FastConfig.exe"; [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri $url -OutFile $file; Start-Process -Filepath $file;
 
 # VM-QuickConfig
 
