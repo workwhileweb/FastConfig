@@ -1,25 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
-namespace LowEndViet.com_VPS_Tool
+namespace FastConfig
 {
     public partial class AutoLoginPasswordForm : Form
     {
-
-        public string autoLoginPassword { get; set; }
-
         public AutoLoginPasswordForm()
         {
             InitializeComponent();
-            this.MaximumSize = this.Size;
-            this.MinimumSize = this.Size;
+            MaximumSize = Size;
+            MinimumSize = Size;
         }
+
+        public string autoLoginPassword { get; set; }
 
         private void btnSubmitAutoLoginPassword_Click(object sender, EventArgs e)
         {
@@ -28,17 +21,14 @@ namespace LowEndViet.com_VPS_Tool
 
         private void txtAutoLoginPassword_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                submitPassword();
-            }
+            if (e.KeyCode == Keys.Enter) submitPassword();
         }
 
         private void submitPassword()
         {
-            this.autoLoginPassword = txtAutoLoginPassword.Text;
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+            autoLoginPassword = txtAutoLoginPassword.Text;
+            DialogResult = DialogResult.OK;
+            Close();
         }
     }
 }

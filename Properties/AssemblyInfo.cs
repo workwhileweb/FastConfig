@@ -1,17 +1,16 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("VM QuickConfig")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("FastConfig")]
+[assembly: AssemblyDescription("FastConfig")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("VM QuickConfig")]
-[assembly: AssemblyCopyright("Copyright ©  2018-2019")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany("FastConfig")]
+[assembly: AssemblyProduct("FastConfig")]
+[assembly: AssemblyCopyright("FastConfig")]
+[assembly: AssemblyTrademark("FastConfig")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
