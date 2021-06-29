@@ -1,4 +1,4 @@
-﻿namespace LowEndViet.com_VPS_Tool
+﻿namespace FastConfig
 {
     partial class ForcePasswordChange
     {

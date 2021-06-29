@@ -20,14 +20,7 @@ namespace FastConfig
         public Main(string[] args)
         {
             InitializeComponent();
-            Text = Text + " Version " + VERSION;
-
-            lnkGit.Text = GITNAME;
-            //Set the tooltip
-            ttAutologin.SetToolTip(label8,
-                "If you check this box, your VPS will be automatically login when it is started.\r\n" +
-                "It allows you to reset your password over Web console in case you forget the password.");
-
+            
             initCheckbox();
             initRegistry();
             initLEVDir();
@@ -55,7 +48,7 @@ namespace FastConfig
             txtAdminAcc.Text = currentUsername;
 
             // Get & set current RDP port
-            lblCurrentRDPPort.Text = Registry.LocalMachine.OpenSubKey(REG_RDP_PORT).GetValue("PortNumber").ToString();
+            txtRDPPort.Text = Registry.LocalMachine.OpenSubKey(REG_RDP_PORT).GetValue("PortNumber").ToString();
         }
 
         #region Inner classes
@@ -234,7 +227,6 @@ namespace FastConfig
                 executeCommand("net stop \"TermService\" /y && net start \"TermService\"");
                 MessageBox.Show("Successfully change RDP port!", "Success!",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
-                lblCurrentRDPPort.Text = newRDPPort;
             }
         }
 
@@ -273,16 +265,9 @@ namespace FastConfig
         private void btnInstall_Click(object sender, EventArgs e)
         {
             // Add firefox
-            if (txtFirefoxVer.Text == "Latest")
-                levCheckbox4Software.Add(new LevCheckbox(chkFirefox,
-                    "https://download.mozilla.org/?product=firefox-latest&os=win&lang=en-US", "FirefoxLatest.exe",
-                    "FirefoxLatest.exe /S"));
-            else
-                levCheckbox4Software.Add(new LevCheckbox(chkFirefox,
-                    "https://ftp.mozilla.org/pub/firefox/releases/" + txtFirefoxVer.Text +
-                    ".0/win32/en-US/Firefox%20Setup%20" + txtFirefoxVer.Text + ".0.exe", "FirefoxSetup.exe",
-                    "FirefoxSetup.exe /S"));
-
+            levCheckbox4Software.Add(new LevCheckbox(chkFirefox,
+                "https://download.mozilla.org/?product=firefox-latest&os=win&lang=en-US", "FirefoxLatest.exe",
+                "FirefoxLatest.exe /S"));
             var statusForm = new StatusForm(levCheckbox4Software);
             statusForm.Show();
             var wc = new WebClient();
@@ -407,8 +392,6 @@ namespace FastConfig
                     new LevCheckbox(chkChrome,
                         "https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B162F372C-537B-5D4B-4170-3A63D3FA265F%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26installdataindex%3Ddefaultbrowser/chrome/install/ChromeStandaloneSetup64.exe",
                         "ChromeSetup64.exe", "ChromeSetup64.exe /silent /install"),
-                    new LevCheckbox(chkCoccoc, "http://files.coccoc.com/browser/coccoc_standalone_vi.exe",
-                        "CocCocSetup.exe", "CocCocSetup.exe /silent /install"),
                     new LevCheckbox(chkUnikey, "http://file.lowendviet.com/Software/UniKey42RC.exe", "UniKey42RC.exe",
                         " & copy " + Path.GetTempPath() + "UniKey42RC.exe " +
                         Environment.GetFolderPath(Environment.SpecialFolder.Desktop)),
@@ -456,8 +439,6 @@ namespace FastConfig
                     new LevCheckbox(chkChrome,
                         "https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B6895D2F5-C00B-C0C3-5A9F-9F5A2D9AE003%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26installdataindex%3Ddefaultbrowser/update2/installers/ChromeSetup.exe",
                         "ChromeSetup.exe", "ChromeSetup.exe /silent /install"),
-                    new LevCheckbox(chkCoccoc, "http://files.coccoc.com/browser/coccoc_standalone_vi.exe",
-                        "CocCocSetup.exe", "CocCocSetup.exe /silent /install"),
                     new LevCheckbox(chkUnikey, "http://file.lowendviet.com/Software/UniKey42RC.exe", "UniKey42RC.exe",
                         " & copy " + Path.GetTempPath() + "UniKey42RC.exe " +
                         Environment.GetFolderPath(Environment.SpecialFolder.Desktop)),
