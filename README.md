@@ -7,6 +7,9 @@ powershell -command "$url = 'https://github.com/workwhileweb/FastConfig/releases
 ```sh
 $url = "https://github.com/workwhileweb/FastConfig/releases/download/v1.0/FastConfig.exe"; $file = [Environment]::GetFolderPath("Desktop") + "/FastConfig.exe"; [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri $url -OutFile $file; Start-Process -Filepath $file;
 ```
+ * Screenshot
+
+   ![ screenshot]( Untitled.png )
 
 # VM-QuickConfig
 
